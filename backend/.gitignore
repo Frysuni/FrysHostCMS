@@ -1,0 +1,18 @@
+test.ts
+test.js
+
+# compiled output
+/assets
+/dist
+/node_modules
+/logs
+/.secrets
+/plainPasswords
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+vscode-profile-*
