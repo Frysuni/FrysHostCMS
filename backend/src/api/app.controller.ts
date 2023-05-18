@@ -18,6 +18,8 @@ export class AppController {
   }
 
   @Get('ping')
-  ping() { return {}; }
+  ping() {
+    return { status: true };
+  }
 
 }

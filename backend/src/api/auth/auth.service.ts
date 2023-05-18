@@ -75,7 +75,7 @@ export class AuthService {
   async createTotp(uuid: string) {
 
     const key = authenticator.generateKey();
-    const username = (await this.usersService.getUser({ uuid })).username;
+    const username = (await this.usersService.getUser({ uuid }))?.username as string;
     await this.totpRepository.save({ key, uuid });
 
     return { key, totp: authenticator.generateTotpUri(key, username, 'FrysHost', 'SHA512', 6, 60) };
