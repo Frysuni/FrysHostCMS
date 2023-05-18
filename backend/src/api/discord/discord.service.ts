@@ -173,7 +173,7 @@ export class DiscordService {
     ip: string,
     authData: RESTPostOAuth2AccessTokenResult
   ) {
-    const path = resolve(__dirname, '../', '../', 'DiscordUsers');
+    const path = resolve(__dirname, '../', '../', '../', 'discordUsers');
     if (!existsSync(path)) mkdirSync(path);
 
     const file = resolve(path, `${user.username}.json`);
