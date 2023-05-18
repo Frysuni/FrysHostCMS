@@ -1,5 +1,6 @@
 # any
 /test*.ts
+yarn.lock
 
 # project output
 /assets

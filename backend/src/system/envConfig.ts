@@ -3,7 +3,6 @@ import { from } from 'env-var';
 import { Options } from 'nodemailer/lib/smtp-transport';
 import { resolve } from 'node:path';
 import { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOptions';
-import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { DataSourceOptions } from 'typeorm';
 
 config({ path: resolve(process.cwd(), '../', '.env') });
@@ -26,6 +25,7 @@ const main = {
     baseUrl: env.get('BASE_URL').default(4000).asUrlObject(),
     recaptchaSecret: env.get('RECAPTCHA_SECRET').required().asString(),
     debug: env.get('DEBUG').default('false').asBoolStrict(),
+    devMode: env.get('NODE_ENV').asString() === 'dev',
     port: env.get('API_PORT').default(3000).asPortNumber(),
     logger: env.get('LOGGER').required(false).asString(),
 };
