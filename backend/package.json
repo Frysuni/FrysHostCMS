@@ -1,6 +1,7 @@
 {
   "name": "@fryshost/backend",
   "author": "Frys",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "nest build -p tsconfig.build.json",

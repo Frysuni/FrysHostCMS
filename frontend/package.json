@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "@fryshost/frontend",
+  "version": "0.0.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
