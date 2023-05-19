@@ -7,12 +7,13 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "start": "node .output/server/index.mjs",
-    "postinstall": "nuxt prepare"
+    "nuxt:prepare": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "^0.2.5",
     "@nuxt/types": "^2.16.3",
     "@types/events": "^3.0.0",
+    "@types/node": "^20.2.1",
     "autoprefixer": "^10.4.14",
     "dotenv": "^16.0.3",
     "env-var": "^7.3.1",
@@ -33,6 +34,9 @@
     "qrcode-with-logos": "^1.0.3",
     "skinview3d": "^3.0.0-alpha.1",
     "typed-emitter": "^2.1.0",
-    "vue-recaptcha": "^2.0.3"
+    "vite": "^4.3.8",
+    "vue": "^3.3.4",
+    "vue-recaptcha": "^2.0.3",
+    "webpack": "^5.0.0"
   }
 }
